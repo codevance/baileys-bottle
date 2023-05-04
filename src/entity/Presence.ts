@@ -1,4 +1,4 @@
-import { WAPresence } from "@adiwajshing/baileys";
+import { WAPresence } from "dupond-engine";
 import {
   Column,
   Entity,

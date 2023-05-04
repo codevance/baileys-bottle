@@ -1,8 +1,8 @@
 import makeWASocket, {
   DisconnectReason,
   fetchLatestBaileysVersion,
-} from "@adiwajshing/baileys";
-import log from "@adiwajshing/baileys/lib/Utils/logger";
+} from "dupond-engine";
+import log from "dupond-engine/lib/Utils/logger";
 import BaileysBottle from "..";
 import { Boom } from "@hapi/boom";
 
@@ -15,7 +15,7 @@ BaileysBottle.init({
   console.log("DB initialized");
   const client = async (clientName: string) => {
     console.log(`Starting client "${clientName}"`);
-    
+
     const logger = log.child({});
     logger.level = "silent";
 
